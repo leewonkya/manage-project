@@ -2,4 +2,56 @@
     height: 100%;
     position: fixed;
     width: 264px;
+    box-shadow: 2px 0px 1px 0px #ccc;
+    .profile-box{
+        &__content{
+            .wc{
+                span{
+                    font-weight: 600;
+                    color: rgba($color: #000000, $alpha: .8);
+                    font-size: 110%;
+                }
+            }
+        }
+    }
+    .list-box{
+        .list-title{
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            color: rgba($color: #000000, $alpha: .6);
+            font-weight: 500;
+            &::selection{
+                color: #fff;
+                background-color: var(--primary);
+                opacity: 1;
+            }
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            .list-item{
+                &:hover{
+                    cursor: pointer;
+
+                }
+                
+                &:hover>a{
+                    color: #000;
+                    text-decoration: none;
+                }
+                font-size: 14px;
+                width: 100%;
+                margin-bottom: 10px;
+                .list-link{
+                    color: rgba($color: #000000, $alpha: .8);
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;                
+                    .content{
+                        flex-grow: 1;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -23,9 +23,9 @@
 
             <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-lg-between align-items-center">
                 <div>
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">Manage Project</a>
                 </div>
-                <div class="collapse navbar-collapse flex-grow-0">
+                <div class="collapse navbar-collapse flex-grow-1 flex-lg-grow-0">
                     <form class="form-inline my-2 my-lg-0">
                         <div class="search-box">
                             <input class="form-control mr-sm-2 search" type="text" placeholder="Search">
@@ -116,10 +116,30 @@
                             <a class="nav-link dropdown-toggle" href="#" id="profile" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <img src="./public/image/profile.png" alt="User avatar" width="30">
+                                
                             </a>
                             <div class="dropdown-menu dropdown-menu-right custom-dropdown" aria-labelledby="profile">
-                                <a class="dropdown-item" href="#">Action 1</a>
-                                <a class="dropdown-item" href="#">Action 2</a>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-3" href="#">
+                                    <span class="mr-2"><i class="fas fa-user "></i></span>
+                                    <div class="content">Profile</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-3 dropdown-hover" href="#">
+                                    <span class="mr-2"><i class="fas fa-chart-bar "></i></span>
+                                    <div class="content">Tools</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-3" href="#">
+                                    <span class="mr-2"><i class="fa fa-cog "></i></span>
+                                    <div class="content">Setting</div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-3" href="#">
+                                    <span class="mr-2"><i class="fas fa-question-circle "></i></span>
+                                    <div class="content">Help</div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-3" href="#">
+                                    <span class="mr-2"><i class="fas fa-power-off    "></i></span>
+                                    <div class="content">Log out</div>
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -127,12 +147,102 @@
             </nav>
         </div>
         <div class="content">
-            <div class="sidebar bg-dark">hihi</div>
+            <div class="sidebar shadow-right">
+                <div class="p-3">
+                    <div class="profile-box d-flex justify-content-start align-items-center pl-3">
+                        <img src="./public/image/profile.png" alt="User profile" width="50" class="mr-3">
+                        <div class="profile-box__content d-flex flex-column">
+                            <div class="wc">Hello, <span>Admin</span></div>
+                            <div class="type">Online <span><i class="fas fa-check text-success   "></i></span></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="list-box">
+                        <div class="list-title px-3 mb-2">dashboard</div>
+                        <ul class="d-flex flex-column justify-content-center align-items-center">
+                            <li class="d-flex flex-row list-item mb-2">
+                                <a class="list-link px-3">
+                                    <span class="icon mr-3">
+                                        <i class="fas fa-rainbow    "></i>
+                                    </span>
+                                    <span class="content">Dashboard</span>
+                                    <span class="toggle-con">
+                                        <i class="fas fa-angle-down    "></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="d-flex flex-row list-item mb-2">
+                                <a class="list-link px-3">
+                                    <span class="icon mr-3">
+                                        <i class="fas fa-rainbow    "></i>
+                                    </span>
+                                    <span class="content">Dashboard</span>
+                                    <span class="toggle-con">
+                                        <i class="fas fa-angle-down    "></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="d-flex flex-row list-item mb-2">
+                                <a class="list-link px-3">
+                                    <span class="icon mr-3">
+                                        <i class="fas fa-rainbow    "></i>
+                                    </span>
+                                    <span class="content">Dashboard</span>
+                                    <span class="toggle-con">
+                                        <i class="fas fa-angle-down    "></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="list-box">
+                        <div class="list-title px-3 mb-2">dashboard</div>
+                        <ul class="d-flex flex-column justify-content-center align-items-center">
+                            <li class="d-flex flex-row list-item mb-2">
+                                <a class="list-link px-3">
+                                    <span class="icon mr-3">
+                                        <i class="fas fa-rainbow    "></i>
+                                    </span>
+                                    <span class="content">Dashboard</span>
+                                    <span class="toggle-con">
+                                        <i class="fas fa-angle-down    "></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="d-flex flex-row list-item mb-2">
+                                <a class="list-link px-3">
+                                    <span class="icon mr-3">
+                                        <i class="fas fa-rainbow    "></i>
+                                    </span>
+                                    <span class="content">Dashboard</span>
+                                    <span class="toggle-con">
+                                        <i class="fas fa-angle-down    "></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="d-flex flex-row list-item mb-2">
+                                <a class="list-link px-3">
+                                    <span class="icon mr-3">
+                                        <i class="fas fa-rainbow    "></i>
+                                    </span>
+                                    <span class="content">Dashboard</span>
+                                    <span class="toggle-con">
+                                        <i class="fas fa-angle-down    "></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                    
+                </div>
+            </div>
             <div class="main">
                 <div class="content-box">
                     <div class="haha">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta nihil voluptatibus aut, doloremque ipsam a molestias iste impedit temporibus voluptatem? Asperiores quas vero quasi qui ad aspernatur dolor dolore.
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -145,11 +255,17 @@
 
     <script>
         $(document).ready(function () {
-            $('.dropdown-submenu a.btn-submenu').on("click", (e)=>{
-                $(this).next('div#messageId').toggleClass('show');
+            $('.dropdown-submenu > a').on("click", function (e) {
+                var submenu = $(this);
+                $('.dropdown-submenu .dropdown-menu').removeClass('show');
+                submenu.next('.dropdown-menu').addClass('show');
                 e.stopPropagation();
-                e.preventDefault();
-            })
+            });
+
+            $('.dropdown').on("hidden.bs.dropdown", function () {
+                
+                $('.dropdown-menu.show').removeClass('show');
+            });
         });
     </script>
 </body>

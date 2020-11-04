@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./vendors/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./vendors/fontawesome-free-5.14.0-web/css/all.min.css">
+
+
+
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Manane Project | Dev99</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="header">
+
+
+
+            <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-lg-between align-items-center">
+                <div>
+                    <a class="navbar-brand" href="#">Navbar</a>
+                </div>
+                <div class="collapse navbar-collapse flex-grow-0">
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="search-box">
+                            <input class="form-control mr-sm-2 search" type="text" placeholder="Search">
+                            <a class="btn" href="#">
+                                <i class="fas fa-search fa-sm"></i>
+                            </a>
+                        </div>
+                    </form>
+                    <ul class="navbar-nav mt-2 mt-lg-0 align-items-center">
+                        <li class="nav-item dropdown" id="notification">
+                            <a class="nav-link dropdown-toggle notification-box" href="#" id="dropdownId"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-comment-alt"></i>
+                                <span class="badge badge-danger badge-custom">1</span>
+                            </a>
+
+                            <div class="dropdown-menu dropdown-menu-right custom-dropdown" aria-labelledby="dropdownId">
+                                <div
+                                    class="d-flex align-items-center justify-content-between px-4 mb-3 mt-2 border-bottom pb-2 main-notification">
+                                    <div class="title">Thông Báo</div>
+                                    <div class="dropdown dropdown-submenu" id="options">
+                                        <a class="btn btn-custom btn-submenu" id="messageId" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-h"></i>
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-right custom-dropdown custom-shadow"
+                                            id="messageId" style="z-index: 9999;">
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center">
+                                                    <i class="fas fa-check mr-3"></i>
+                                                    <div class="content">Đánh dấu tất cả là đã đọc</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex align-items-center">
+                                                    <i class="fas fa-check mr-3"></i>
+                                                    <div class="content">Đánh dấu tất cả là đã đọc</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                    <img src="./public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
+                                    <div class="d-flex flex-column justify-content-start message">
+                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
+                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                        <small>16 phút trước</small>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                    <img src="./public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
+                                    <div class="d-flex flex-column justify-content-start message">
+                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
+                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                        <small>16 phút trước</small>
+                                    </div>
+                                    <div class="badge badge-primary ml-2 px-2"
+                                        style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                </a>
+
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                    <img src="./public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
+                                    <div class="d-flex flex-column justify-content-start message">
+                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
+                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                        <small>16 phút trước</small>
+                                    </div>
+                                    <div class="badge badge-primary ml-2 px-2"
+                                        style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                </a>
+
+                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                    <img src="./public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
+                                    <div class="d-flex flex-column justify-content-start message">
+                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
+                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                        <small>16 phút trước</small>
+                                    </div>
+                                    <div class="badge badge-primary ml-2 px-2"
+                                        style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                </a>
+
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" id="user">
+                            <a class="nav-link dropdown-toggle" href="#" id="profile" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <img src="./public/image/profile.png" alt="User avatar" width="30">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right custom-dropdown" aria-labelledby="profile">
+                                <a class="dropdown-item" href="#">Action 1</a>
+                                <a class="dropdown-item" href="#">Action 2</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="sidebar bg-dark">hihi</div>
+            <div class="main">
+                <div class="content-box">
+                    <div class="haha">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam soluta nihil voluptatibus aut,
+                        doloremque ipsam a molestias iste impedit temporibus voluptatem? Asperiores quas vero quasi qui
+                        ad aspernatur dolor dolore.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./vendors/jquery/jquery-3.5.1.min.js"></script>
+
+    <script src="./vendors/fontawesome-free-5.14.0-web/js/all.min.js"></script>
+
+    <script src="./vendors/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu > a').on("click", function (e) {
+                var submenu = $(this);
+                $('.dropdown-submenu .dropdown-menu').removeClass('show');
+                submenu.next('.dropdown-menu').addClass('show');
+                e.stopPropagation();
+            });
+
+            $('.dropdown').on("hidden.bs.dropdown", function () {
+                // hide any open menus when parent closes
+                $('.dropdown-menu.show').removeClass('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
