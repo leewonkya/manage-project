@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 * {
   font-family: 'Poppins', sans-serif;
   font-size: 13px;
@@ -126,6 +127,7 @@ a {
   width: 264px;
   -webkit-box-shadow: 2px 0px 1px 0px #ccc;
           box-shadow: 2px 0px 1px 0px #ccc;
+  z-index: 1;
 }
 
 #wrapper .content .sidebar .profile-box__content .wc span {
@@ -159,9 +161,13 @@ a {
 }
 
 #wrapper .content .sidebar .list-box ul .list-item {
-  font-size: 14px;
+  font-size: 15px;
   width: 100%;
   margin-bottom: 10px;
+}
+
+#wrapper .content .sidebar .list-box ul .list-item.active > a {
+  color: #000;
 }
 
 #wrapper .content .sidebar .list-box ul .list-item:hover {
@@ -174,7 +180,7 @@ a {
 }
 
 #wrapper .content .sidebar .list-box ul .list-item .list-link {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.7);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -185,50 +191,106 @@ a {
           flex-direction: row;
 }
 
-#wrapper .content .sidebar .list-box ul .list-item .list-link .content {
+#wrapper .content .sidebar .list-box ul .list-item .list-link-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper .content .sidebar .footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  #wrapper .content .sidebar .footer {
+    width: 17%;
+  }
+}
+
+#wrapper .content .sidebar .footer .footer-text {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #wrapper .content .main {
   padding-left: 264px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 #wrapper .content .main .content-box {
   padding: 1rem;
 }
 
-#wrapper .content .main .content-box .haha {
-  width: 100px;
-  height: 100px;
-  border: solid .5px #ccc;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
+#wrapper .content .main .content-box .card {
+  font-family: Roboto, sans-serif;
 }
 
-#wrapper .content .main .content-box .haha::-webkit-scrollbar {
-  width: 10px;
+#wrapper .content .main .content-box .card-custom {
+  border-radius: 2px;
+  border-width: 2px;
 }
 
-#wrapper .content .main .content-box .haha::-webkit-scrollbar-track {
-  border-radius: 34px;
-  background: #fff;
+#wrapper .content .main .content-box .card-body .card-title {
+  font-size: 1.5rem;
+  color: var(--purple);
 }
 
-#wrapper .content .main .content-box .haha::-webkit-scrollbar-track:hover {
-  background-color: #f1f1f1;
+#wrapper .content .main .content-box .card-body .card-text .rate {
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 500;
+  margin-right: 5px;
 }
 
-#wrapper .content .main .content-box .haha::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 34px;
+#wrapper .content .main .content-box .card-body .custom-progress {
+  margin-top: 10px;
+  width: 100%;
+  background: #ccc;
+  height: 20px;
+  border-radius: 14px;
+  position: relative;
 }
 
-#wrapper .content .main .content-box .haha::-webkit-scrollbar-thumb:hover {
-  background: #555;
+#wrapper .content .main .content-box .card-body .custom-progress .progress-bar-primary {
+  background: var(--primary);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  border-radius: 14px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+#wrapper .content .main .content-box .card-body .btn-custom {
+  background-color: var(--purple);
+  color: #fff;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+#wrapper .content .main .content-box .card-body .btn-custom:hover {
+  background-color: #5a23c2;
+  -webkit-box-shadow: 0px 1px 7px 1px #ccc;
+          box-shadow: 0px 1px 7px 1px #ccc;
 }
 /*# sourceMappingURL=style.css.map */
