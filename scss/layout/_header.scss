@@ -1,7 +1,6 @@
 .header {
   width: 100%;
-  position: relative;
-  .navbar {
+    .navbar {
     box-shadow: 0px 1px 4px 1px #ccc;
     .navbar-brand {
       font-size: 19px;
@@ -41,7 +40,18 @@
             a {
               white-space: normal;
             }
-            .main-notification {
+            .box{
+              &::-webkit-scrollbar{
+                width: 5px;
+              }
+              &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+              }
+              &::-webkit-scrollbar-thumb {
+                background: #888; 
+              }
+            }
+            .main-notification {              
               .title {
                 font-weight: 700;
                 font-size: 17px;

@@ -12,16 +12,14 @@
 
 
     <link rel="stylesheet" href="../../scss/style.css">
-    <title>Manane Project | Dev99</title>
+    <title>Manage Project | Dev99</title>
 </head>
 
 <body>
     <div id="wrapper">
         <div class="header">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-lg-between align-items-center">
-                <div>
-                    <a class="navbar-brand" href="#">Quản lí đồ án</a>
-                </div>
+            <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-end align-items-center">
+
                 <div class="collapse navbar-collapse flex-grow-1 flex-lg-grow-0">
                     <form class="form-inline my-2 my-lg-0">
                         <div class="search-box">
@@ -33,31 +31,23 @@
                     </form>
                     <ul class="navbar-nav mt-2 mt-lg-0 align-items-center">
                         <li class="nav-item dropdown" id="notification">
-                            <a class="nav-link dropdown-toggle notification-box" 
-                            href="#" 
-                            id="dropdownId"                                
-                            data-toggle="dropdown" 
-                            aria-haspopup="true" 
-                            aria-expanded="false">
+                            <a class="nav-link dropdown-toggle notification-box" href="#" id="dropdownId"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="far fa-comment-alt"></i>
                                 <span class="badge badge-danger badge-custom">1</span>
                             </a>
 
-                            <div class="dropdown-menu dropdown-menu-right custom-dropdown"
-                                aria-labelledby="dropdownId">
+                            <div class="dropdown-menu dropdown-menu-right custom-dropdown" aria-labelledby="dropdownId">
                                 <div
                                     class="d-flex align-items-center justify-content-between px-4 mb-3 mt-2 border-bottom pb-2 main-notification">
                                     <div class="title">Thông Báo</div>
                                     <div class="dropdown dropdown-submenu" id="options">
-                                        <a class="btn btn-custom btn-submenu"
-                                        id="messageId" 
-                                        data-toggle="dropdown"
-                                        aria-haspopup="true" 
-                                        aria-expanded="false">
+                                        <a class="btn btn-custom btn-submenu" id="messageId" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
                                             <i class="fas fa-ellipsis-h"></i>
                                         </a>
-                                        <div class="dropdown-menu dropdown-menu-right custom-dropdown custom-shadow" 
-                                        id="messageId">
+                                        <div class="dropdown-menu dropdown-menu-right custom-dropdown custom-shadow"
+                                            id="messageId">
                                             <div class="dropdown-item d-flex align-items-center">
                                                 <i class="fas fa-check mr-3"></i>
                                                 <div class="content">Đánh dấu tất cả là đã đọc</div>
@@ -69,50 +59,75 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
-                                    <img src="../../public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
-                                    <div class="d-flex flex-column justify-content-start message">
-                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
-                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
-                                        <small>16 phút trước</small>
-                                    </div>
-                                </a>                               
-                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
-                                    <img src="../../public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
-                                    <div class="d-flex flex-column justify-content-start message">
-                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
-                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
-                                        <small>16 phút trước</small>
-                                    </div>
-                                    <div class="badge badge-primary ml-2 px-2" style="width: 15px; height: 15px; border-radius: 50%;"> </div>
-                                </a>
-                               
-                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
-                                    <img src="../../public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
-                                    <div class="d-flex flex-column justify-content-start message">
-                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
-                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
-                                        <small>16 phút trước</small>
-                                    </div>
-                                    <div class="badge badge-primary ml-2 px-2" style="width: 15px; height: 15px; border-radius: 50%;"> </div>
-                                </a>
-                               
-                                <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
-                                    <img src="../../public/image/profile1.png" alt="Avt-user" width="40" class="mr-3">
-                                    <div class="d-flex flex-column justify-content-start message">
-                                        <div class="message-content"><strong class="user-name">Maria</strong> vừa cập
-                                            nhật báo cáo mới vừa cập nhật báo cáo mới</div>
-                                        <small>16 phút trước</small>
-                                    </div>
-                                    <div class="badge badge-primary ml-2 px-2" style="width: 15px; height: 15px; border-radius: 50%;"> </div>
-                                </a>
-                               
+                                <div class="box w-100 h-100 overflow-auto" style="max-height: 300px;">
+                                    <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                        <img src="../../public/image/profile1.png" alt="Avt-user" width="40"
+                                            class="mr-3">
+                                        <div class="d-flex flex-column justify-content-start message">
+                                            <div class="message-content"><strong class="user-name">Maria</strong> vừa
+                                                cập
+                                                nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                            <small>16 phút trước</small>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                        <img src="../../public/image/profile1.png" alt="Avt-user" width="40"
+                                            class="mr-3">
+                                        <div class="d-flex flex-column justify-content-start message">
+                                            <div class="message-content"><strong class="user-name">Maria</strong> vừa
+                                                cập
+                                                nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                            <small>16 phút trước</small>
+                                        </div>
+                                        <div class="badge badge-primary ml-2 px-2"
+                                            style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                    </a>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                        <img src="../../public/image/profile1.png" alt="Avt-user" width="40"
+                                            class="mr-3">
+                                        <div class="d-flex flex-column justify-content-start message">
+                                            <div class="message-content"><strong class="user-name">Maria</strong> vừa
+                                                cập
+                                                nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                            <small>16 phút trước</small>
+                                        </div>
+                                        <div class="badge badge-primary ml-2 px-2"
+                                            style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                    </a>
+
+                                    <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                        <img src="../../public/image/profile1.png" alt="Avt-user" width="40"
+                                            class="mr-3">
+                                        <div class="d-flex flex-column justify-content-start message">
+                                            <div class="message-content"><strong class="user-name">Maria</strong> vừa
+                                                cập
+                                                nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                            <small>16 phút trước</small>
+                                        </div>
+                                        <div class="badge badge-primary ml-2 px-2"
+                                            style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                    </a>
+
+                                    <a class="dropdown-item d-flex align-items-center mb-1 px-2" href="#">
+                                        <img src="../../public/image/profile1.png" alt="Avt-user" width="40"
+                                            class="mr-3">
+                                        <div class="d-flex flex-column justify-content-start message">
+                                            <div class="message-content"><strong class="user-name">Maria</strong> vừa
+                                                cập
+                                                nhật báo cáo mới vừa cập nhật báo cáo mới</div>
+                                            <small>16 phút trước</small>
+                                        </div>
+                                        <div class="badge badge-primary ml-2 px-2"
+                                            style="width: 15px; height: 15px; border-radius: 50%;"> </div>
+                                    </a>
+                                </div>
                             </div>
                         </li>
                         <li class="nav-item dropdown" id="user">
                             <a class="nav-link dropdown-toggle" href="#" id="profile" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <img src="../../public/image/profile.png" alt="User avatar" width="30">                                
+                                <img src="../../public/image/profile.png" alt="User avatar" width="30">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right custom-dropdown" aria-labelledby="profile">
                                 <a class="dropdown-item d-flex align-items-center mb-1 px-3" href="#">
@@ -145,6 +160,9 @@
         <div class="content">
             <div class="sidebar shadow-right">
                 <div class="p-3">
+                    <div class="logo d-flex justify-content-center align-items-center">
+                        <a href="#">Quản Lý Đồ Án</a>
+                    </div>
                     <div class="profile-box d-flex justify-content-start align-items-center pl-3">
                         <img src="../../public/image/profile.png" alt="User profile" width="50" class="mr-3">
                         <div class="profile-box__content d-flex flex-column">
@@ -154,7 +172,7 @@
                     </div>
                     <hr>
                     <div class="list-box">
-                        <div class="list-title px-3 mb-2">dashboard</div>
+                        <div class="list-title px-2 mb-2">dashboard</div>
                         <ul class="d-flex flex-column justify-content-center align-items-center">
                             <li class="d-flex flex-row list-item mb-2 active">
                                 <a class="list-link px-2">
@@ -168,7 +186,7 @@
                     </div>
                     <hr>
                     <div class="list-box">
-                        <div class="list-title px-3 mb-2">Chức năng</div>
+                        <div class="list-title px-2 mb-2">Chức năng</div>
                         <ul class="d-flex flex-column justify-content-center align-items-center">
                             <li class="d-flex flex-row list-item mb-2">
                                 <a class="list-link px-2">
@@ -199,65 +217,153 @@
                     <hr>
                     <div class="footer">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                                
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 Copyright &copy; By <a href="#" class="footer-text">Dev99</a>
-                            </div>                                                 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="main">
-                <div class="content-box">      
-                    <div class="row">                                                
-                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="card text-left card-custom p-2">                              
-                              <div class="card-body">
-                                <div class="card-title">Tiến Độ Hoàn Thành</div>
-                                <div class="card-text"><span class="rate">50%</span>hoàn thành</div>  
-                                <div class="custom-progress">
-                                    <div class="progress-bar-primary">50%</div>
-                                </div>
-                                <hr>
-                                <div class="card-bottom">
-                                    <button class="btn btn-custom">Kiểm tra</button>
-                                </div>
-                              </div>                              
+                <div class="content-box">
+                    <!-- <div class="row">
+                            <div class="w-100">
+                                <ul class="breadcrumb breadcrumb-custom">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                </ul>
                             </div>
-                        </div>                        
+                        </div> -->
+                    <div class="row">
+                        <!-- Danh mục đồ án 
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <div class="content-box__name my-3 py-2">Danh Mục Đồ Án</div>
+                        </div>
+
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="card text-left card-custom p-2">                              
-                              <div class="card-body">
-                                <div class="card-title">Tiến Độ Hoàn Thành</div>
-                                <div class="card-text"><span class="rate">50%</span>hoàn thành</div>  
-                                <div class="custom-progress">
-                                    <div class="progress-bar-primary">50%</div>
+                            <div class="card text-left card-custom p-2">
+                                <div class="card-body">
+                                    <div class="card-title">Tiến Độ Hoàn Thành</div>
+                                    <div class="card-text"><span class="rate">50%</span>hoàn thành</div>
+                                    <div class="custom-progress">
+                                        <div class="progress-bar-primary">50%</div>
+                                    </div>
+                                    <hr>
+                                    <div class="card-bottom">
+                                        <button class="btn btn-custom">Kiểm tra</button>
+                                    </div>
                                 </div>
-                                <hr>
-                                <div class="card-bottom">
-                                    <button class="btn btn-custom">Kiểm tra</button>
-                                </div>
-                              </div>                              
                             </div>
-                        </div>                        
+                        </div>
                         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                            <div class="card text-left card-custom p-2">                              
-                              <div class="card-body">
-                                <div class="card-title">Tiến Độ Hoàn Thành</div>
-                                <div class="card-text"><span class="rate">50%</span>hoàn thành</div>  
-                                <div class="custom-progress">
-                                    <div class="progress-bar-primary">50%</div>
+                            <div class="card text-left card-custom p-2">
+                                <div class="card-body">
+                                    <div class="card-title">Tiến Độ Hoàn Thành</div>
+                                    <div class="card-text"><span class="rate">50%</span>hoàn thành</div>
+                                    <div class="custom-progress">
+                                        <div class="progress-bar-primary">50%</div>
+                                    </div>
+                                    <hr>
+                                    <div class="card-bottom">
+                                        <button class="btn btn-custom">Kiểm tra</button>
+                                    </div>
                                 </div>
-                                <hr>
-                                <div class="card-bottom">
-                                    <button class="btn btn-custom">Kiểm tra</button>
-                                </div>
-                              </div>                              
                             </div>
-                        </div>                        
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="card text-left card-custom p-2">
+                                <div class="card-body">
+                                    <div class="card-title">Tiến Độ Hoàn Thành</div>
+                                    <div class="card-text"><span class="rate">50%</span>hoàn thành</div>
+                                    <div class="custom-progress">
+                                        <div class="progress-bar-primary">50%</div>
+                                    </div>
+                                    <hr>
+                                    <div class="card-bottom">
+                                        <button class="btn btn-custom">Kiểm tra</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="message ml-3 h2 mr-3">Dữ liệu trống</div>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createProject">
+                            Tạo ngay
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="createProject" tabindex="-1" role="dialog"
+                            aria-labelledby="modelTitleId" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <form>
+                                    <div class="modal-content">
+
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Đợt đồ án</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Ngày bắt đầu</label>
+                                                        <input type="date" name="" id="" class="form-control"
+                                                            placeholder="" aria-describedby="helpId">
+                                                        <small id="helpId" class="text-muted">Thời gian bắt đầu đồ
+                                                            án</small>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Ngày kết thúc</label>
+                                                        <input type="date" name="" id="" class="form-control"
+                                                            placeholder="" aria-describedby="helpId">
+                                                        <small id="helpId" class="text-muted">Thời gian kết thúc đồ
+                                                            án</small>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Giới hạn số lượng đề tài</label>
+                                                        <input type="number" name="" id="" min="1" max="80"
+                                                            class="form-control">
+                                                        <small class="text-muted">Số lượng đề tài tối đa</small>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Giới hạn số lượng đề tài mỗi giảng viên</label>
+                                                        <input type="number" name="" id="" min="1" max="8"
+                                                            class="form-control">
+                                                        <small class="text-muted">Số lượng đề tài tối đa mỗi giảng
+                                                            viên</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                            <input type="submit" class="btn btn-primary" data-toggle="modal"
+                                                data-target="#Table" value="Xác nhận" />
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="../../vendors/jquery/jquery-3.5.1.min.js"></script>
 
@@ -265,21 +371,7 @@
 
     <script src="../../vendors/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('.dropdown-submenu > a').on("click", function (e) {
-                var submenu = $(this);
-                $('.dropdown-submenu .dropdown-menu').removeClass('show');
-                submenu.next('.dropdown-menu').addClass('show');
-                e.stopPropagation();
-            });
-
-            $('.dropdown').on("hidden.bs.dropdown", function () {
-                
-                $('.dropdown-menu.show').removeClass('show');
-            });
-        });
-    </script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

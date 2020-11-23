@@ -11,7 +11,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 ul {
@@ -30,7 +30,6 @@ a {
 
 #wrapper .header {
   width: 100%;
-  position: relative;
 }
 
 #wrapper .header .navbar {
@@ -82,6 +81,18 @@ a {
   white-space: normal;
 }
 
+#wrapper .header .navbar .navbar-collapse .navbar-nav #notification .custom-dropdown .box::-webkit-scrollbar {
+  width: 5px;
+}
+
+#wrapper .header .navbar .navbar-collapse .navbar-nav #notification .custom-dropdown .box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+#wrapper .header .navbar .navbar-collapse .navbar-nav #notification .custom-dropdown .box::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
 #wrapper .header .navbar .navbar-collapse .navbar-nav #notification .custom-dropdown .main-notification .title {
   font-weight: 700;
   font-size: 17px;
@@ -124,10 +135,33 @@ a {
 #wrapper .content .sidebar {
   height: 100%;
   position: fixed;
-  width: 264px;
+  width: 230px;
   -webkit-box-shadow: 2px 0px 1px 0px #ccc;
           box-shadow: 2px 0px 1px 0px #ccc;
+  left: 0;
+  top: 0;
   z-index: 1;
+  background-color: #fff;
+}
+
+#wrapper .content .sidebar .logo {
+  font-family: Roboto, sans-serif;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#wrapper .content .sidebar .logo:hover > a {
+  color: #000;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#wrapper .content .sidebar .logo a {
+  text-decoration: none;
+  color: #373737;
+  font-size: 1.5rem;
 }
 
 #wrapper .content .sidebar .profile-box__content .wc span {
@@ -231,13 +265,53 @@ a {
 }
 
 #wrapper .content .main {
-  padding-left: 264px;
+  padding-left: 230px;
   width: 100%;
   overflow-x: hidden;
 }
 
 #wrapper .content .main .content-box {
-  padding: 1rem;
+  padding: 1.2rem;
+  min-height: 100vh;
+}
+
+#wrapper .content .main .content-box .breadcrumb-custom {
+  background-color: transparent;
+}
+
+#wrapper .content .main .content-box .breadcrumb-custom .breadcrumb-item {
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+#wrapper .content .main .content-box .breadcrumb-custom .breadcrumb-item a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+#wrapper .content .main .content-box .table tr td input[type="text"]:-moz-read-only {
+  background: red !important;
+}
+
+#wrapper .content .main .content-box .table tr td input[type="text"]:read-only {
+  background: red !important;
+}
+
+#wrapper .content .main .content-box__name {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-left: 10px;
+  position: relative;
+}
+
+#wrapper .content .main .content-box__name:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  height: 4px;
+  width: 6%;
+  border: solid 2px var(--primary);
 }
 
 #wrapper .content .main .content-box .card {
@@ -292,5 +366,13 @@ a {
   background-color: #5a23c2;
   -webkit-box-shadow: 0px 1px 7px 1px #ccc;
           box-shadow: 0px 1px 7px 1px #ccc;
+}
+
+#wrapper .content .main .content-box .message {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper .content .main .content-box .modal-content .modal-title {
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 /*# sourceMappingURL=style.css.map */
