@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+section {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: #ccc;
+	.form-input {
+		width: 600px;
+		min-height: 400px;
+		display: flex;
+		flex-direction: column;
+		padding: 20px 30px;
+		.title {
+			font-size: 1.5rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			width: 100%;
+			color: rgb(0, 0, 0);
+		}
+		.social-content {
+			text-align: left;
+			color: #000;
+			opacity: .7;
+			width: 100%;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		form {
+			.email-box {
+				font-size: 16px;
+				width: 100%;
+				padding: 15px;
+				padding-left: 0;
+				padding-right: 0;
+				position: relative;
+				span {
+					position: absolute;
+					left: 10px;
+					top: 25px;
+					background-color: #fff;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+			.password-box {
+				font-size: 16px;
+				width: 100%;
+				padding: 15px;
+				padding-left: 0;
+				padding-right: 0;
+				position: relative;
+				span {
+					position: absolute;
+					left: 10px;
+					top: 25px;
+					background-color: #fff;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+			.form-box {
+				font-size: 16px;
+				width: 100%;
+				padding: 15px;
+				padding-left: 0;
+				padding-right: 0;
+				position: relative;
+				span {
+					position: absolute;
+					left: 10px;
+					top: 25px;
+					background-color: #fff;
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+			.form-control {
+				width: 100%;
+				padding: 12px;
+				border-radius: 5px;
+				outline: none;
+				border: solid .5px #ccc;
+				overflow: hidden;
+				&:focus {
+					border: solid 2px #1a73e8;
+					~ {
+						span {
+							transform: translate(0, -20px);
+							font-size: 13px;
+							transition: all .3s;
+							color: #1a73e8;
+						}
+					}
+				}
+				&:valid {
+					border: solid 2px #1a73e8;
+					~span {
+						transform: translate(0, -20px);
+						font-size: 13px;
+						transition: all .3s;
+						color: #1a73e8;
+					}
+				}
+			}
+			.py {
+				margin-bottom: 15px;
+				.form-checkbox {
+					padding: 9px;
+					padding-left: 12px;
+					border-radius: 50%;
+					background-color: transparent;
+					margin-right: 5px;
+					&:hover {
+						background-color: #ccc;
+						cursor: pointer;
+						transition: background-color .3s;
+					}
+				}
+			}
+			.submit-box {
+				text-align: left;
+				text-transform: uppercase;
+				font-size: 16px;
+				margin-bottom: 15px;
+				input[type="submit"] {
+					background-color: #1a73e8;
+					color: #fff;
+					font-size: 16px;
+					font-weight: 500;
+					text-transform: uppercase;
+					width: 50%;
+					padding: 12px;
+					outline: none;
+					border: solid 1px transparent;
+					border-radius: 3px;
+					cursor: pointer;
+					&:hover {
+						background-color: #004bae;
+						transition: background-color .3s;
+					}
+				}
+			}
+		}
+		.m-password {
+			font-size: 15px;
+			a {
+				text-decoration: none;
+				color: #1a73e8;
+				font-weight: 500;
+			}
+		}
+	}
+}

@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
-  font-family: 'Poppins', sans-serif;
   font-size: 13px;
 }
 
@@ -20,6 +20,18 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+label {
+  font-family: Roboto, sans-serif !important;
+}
+
+.cursor-notallowed {
+  cursor: not-allowed;
+}
+
+.f-roboto {
+  font-family: Roboto, sans-serif !important;
 }
 
 /* Mixin */
@@ -284,9 +296,90 @@ a {
   font-weight: 600;
 }
 
+#wrapper .content .main .content-box .breadcrumb-custom .breadcrumb-item.active a {
+  color: #000;
+}
+
 #wrapper .content .main .content-box .breadcrumb-custom .breadcrumb-item a {
+  font-size: 16px !important;
   color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
+}
+
+#wrapper .content .main .content-box .index-box .btn-custom {
+  color: #fff;
+  background-color: var(--purple);
+}
+
+#wrapper .content .main .content-box .project-box .title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#wrapper .content .main .content-box .project-box .time {
+  color: #7b7b7b;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#wrapper .content .main .content-box .project-box .btn-custom {
+  background-color: var(--purple);
+  color: #fff;
+}
+
+#wrapper .content .main .content-box .my-project {
+  position: fixed;
+  top: 85%;
+  border-radius: 4px;
+  z-index: 19999;
+  left: 91%;
+  background: var(--success);
+  -webkit-box-shadow: 1px 1px 10px 2px var(--success);
+          box-shadow: 1px 1px 10px 2px var(--success);
+  padding: .5rem .7rem;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+}
+
+#wrapper .content .main .content-box .my-project:hover {
+  -webkit-box-shadow: 1px 1px 10px 4px var(--success);
+          box-shadow: 1px 1px 10px 4px var(--success);
+}
+
+#wrapper .content .main .content-box .my-project a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+#wrapper .content .main .content-box .heading-by {
+  color: #7b7b7b;
+  font-family: Roboto, sans-serif !important;
+}
+
+#wrapper .content .main .content-box .content-render {
+  padding: .75rem;
+}
+
+#wrapper .content .main .content-box .table tr td, #wrapper .content .main .content-box .table tr th {
+  vertical-align: middle;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+#wrapper .content .main .content-box .table tr td {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-family: Roboto, sans-serif;
+}
+
+#wrapper .content .main .content-box .table tr td ul {
+  margin: 0;
+  padding: 0;
 }
 
 #wrapper .content .main .content-box .table tr td input[type="text"]:-moz-read-only {
@@ -335,26 +428,6 @@ a {
   margin-right: 5px;
 }
 
-#wrapper .content .main .content-box .card-body .custom-progress {
-  margin-top: 10px;
-  width: 100%;
-  background: #ccc;
-  height: 20px;
-  border-radius: 14px;
-  position: relative;
-}
-
-#wrapper .content .main .content-box .card-body .custom-progress .progress-bar-primary {
-  background: var(--primary);
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  color: #fff;
-  border-radius: 14px;
-  text-align: left;
-  padding-left: 15px;
-}
-
 #wrapper .content .main .content-box .card-body .btn-custom {
   background-color: var(--purple);
   color: #fff;
@@ -374,5 +447,195 @@ a {
 
 #wrapper .content .main .content-box .modal-content .modal-title {
   font-family: Arial, Helvetica, sans-serif !important;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: #ccc;
+}
+
+section .form-input {
+  width: 600px;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 30px;
+}
+
+section .form-input .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+  color: black;
+}
+
+section .form-input .social-content {
+  text-align: left;
+  color: #000;
+  opacity: .7;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+section .form-input form .email-box {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+section .form-input form .email-box span {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+section .form-input form .password-box {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+section .form-input form .password-box span {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+section .form-input form .form-box {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+section .form-input form .form-box span {
+  position: absolute;
+  left: 10px;
+  top: 25px;
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+section .form-input form .form-control {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  border: solid .5px #ccc;
+  overflow: hidden;
+}
+
+section .form-input form .form-control:focus {
+  border: solid 2px #1a73e8;
+}
+
+section .form-input form .form-control:focus ~ span {
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+  font-size: 13px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #1a73e8;
+}
+
+section .form-input form .form-control:valid {
+  border: solid 2px #1a73e8;
+}
+
+section .form-input form .form-control:valid ~ span {
+  -webkit-transform: translate(0, -20px);
+          transform: translate(0, -20px);
+  font-size: 13px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #1a73e8;
+}
+
+section .form-input form .py {
+  margin-bottom: 15px;
+}
+
+section .form-input form .py .form-checkbox {
+  padding: 9px;
+  padding-left: 12px;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 5px;
+}
+
+section .form-input form .py .form-checkbox:hover {
+  background-color: #ccc;
+  cursor: pointer;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+section .form-input form .submit-box {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+section .form-input form .submit-box input[type="submit"] {
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 50%;
+  padding: 12px;
+  outline: none;
+  border: solid 1px transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+section .form-input form .submit-box input[type="submit"]:hover {
+  background-color: #004bae;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+}
+
+section .form-input .m-password {
+  font-size: 15px;
+}
+
+section .form-input .m-password a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../vendors/fontawesome-free-5.14.0-web/css/all.min.css">
 
     <link rel="stylesheet" href="../../scss/style.css">
+
     <title>Manage Project | Dev99</title>
 </head>
 
@@ -223,51 +224,70 @@
                 </div>
             </div>
             <div class="main">
-                <div class="content-box">
-                    
+                <div class="content-box">                   
                     <div class="row">
-                        
+                            <div class="w-100">
+                                <ul class="breadcrumb breadcrumb-custom">
+                                    <li class="breadcrumb-item"><a href="#">Danh Sách Đồ Án</a></li>
+                                    <li class="breadcrumb-item active"><a href="#">Quản lý sinh viên</a></li>
+                                </ul>
+                            </div>
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="content-box__name mb-3 py-2">Danh Mục Đồ Án</div>
+                            <div class="heading d-flex flex-row justify-content-between p-2 mb-2 align-content-around">
+                                <div class="heading-title h4">Danh Sách báo cáo</div>
+                                <div class="heading-services d-flex">                                    
+                                        <input type="text" class="form-control mr-2" placeholder="search">
+                                        <button class="btn btn-secondary btn-sm mr-2">Refresh</button>
+                                        <button class="btn btn-primary btn-Add btn-sm mr-2" data-toggle="modal" data-target="#createProject">Add</button>
+                                </div>
+                            </div>
                         </div>
-
-                        
-                        <button type="button" class="btn btn-primary f-roboto m-4" data-toggle="modal" data-target="#createProject">
-                            Tạo đồ án
-                        </button>
-
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <table class="table table-bordered table-hover">
+                            <table class="table table-hover">
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Ngày bắt đầu</th>
-                                        <th>Ngày kết thúc</th>
-                                        <th>Số lượng đề tài cho phép</th>
-                                        <th>Số lượng đề tài đã tạo</th>
-                                        <th>Số lượng đề tài đã đăng ký</th>
+                                        <th>Tên đồ án</th>
+                                        <th>Sinh viên đăng ký</th>
+                                        <th>Tiêu đề</th>
+                                        <th>Ngày lập</th>
+                                        <th>Trạng thái</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr >
+                                    <tr>
                                         <td>1</td>
-                                        <td>10-10-2020</td>
-                                        <td>10-12-2020</td>
-                                        <td>80</td>
-                                        <td>78</td>
-                                        <td>70</td>
+                                        <td>Quản lý sinh viên</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>Báo cáo tiến độ đợt 1</td>      
+                                        <td>10/10/2020</td>                                  
                                         <td>
-                                            <a href="#" class="btn btn-danger btn-sm"><i class="fas fa-trash-alt    "></i></a>
-                                            <a href="#" class="btn btn-info btn-sm"><i class="fas fa-hourglass-end"></i></a>
+                                            Đã xem
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-success btn-sm"><i class="fas fa-check"></i></a>
+                                            <a href="#" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Quản lý sinh viên</td>
+                                        <td>Nguyễn Văn A</td>
+                                        <td>Báo cáo tiến độ đợt 2</td>    
+                                        <td>10/10/2020</td>                                    
+                                        <td>
+                                            Chưa xem
+                                        </td>
+                                        <td>
+                                            <a href="#" class="btn btn-success btn-sm"><i class="fas fa-check"></i></a>
+                                            <a href="#" class="btn btn-info btn-sm"><i class="fas fa-eye"></i></a>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         
-
-
                         <div class="modal fade" id="createProject" tabindex="-1" role="dialog"
                             aria-labelledby="modelTitleId" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
@@ -275,54 +295,50 @@
                                     <div class="modal-content">
 
                                         <div class="modal-header">
-                                            <h5 class="modal-title">Đợt đồ án</h5>
+                                            <h5 class="modal-title">Chi tiết đồ án</h5>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
                                             <div class="row">
-                                                
-                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                        <div class="form-group">
-                                                            <label>Ngày bắt đầu</label>
-                                                            <input type="date" name="" id="" class="form-control"
-                                                                placeholder="" aria-describedby="helpId">
-                                                            <small id="helpId" class="text-muted">Thời gian bắt đầu đồ
-                                                                án</small>
-                                                        </div>
+
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label>Tên đồ án</label>
+                                                        <input type="text" name="" id="" class="form-control"
+                                                            placeholder="" aria-describedby="helpId">
+                                                        <small id="helpId" class="text-muted">Tên đồ án cho sinh viên</small>
                                                     </div>
+                                                </div>
 
-                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                        <div class="form-group">
-                                                            <label>Ngày kết thúc</label>
-                                                            <input type="date" name="" id="" class="form-control"
-                                                                placeholder="" aria-describedby="helpId">
-                                                            <small id="helpId" class="text-muted">Thời gian kết thúc đồ
-                                                                án</small>
-                                                        </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="form-group">
+                                                        <label>Thể loại</label>
+                                                        <input type="text" name="" id="" class="form-control"
+                                                            placeholder="" aria-describedby="helpId">
+                                                        <small id="helpId" class="text-muted">Website, Window Form, ...</small>
                                                     </div>
+                                                </div>
 
-
-                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                        <div class="form-group">
-                                                            <label>Giới hạn số lượng đề tài</label>
-                                                            <input type="number" name="" id="" min="1" max="80"
-                                                                class="form-control">
-                                                            <small class="text-muted">Số lượng đề tài tối đa</small>
-                                                        </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Giới hạn số lượng đề tài</label>
+                                                        <input type="number" name="" id="" min="1" max="80"
+                                                            class="form-control">
+                                                        <small class="text-muted">Số lượng đề tài tối đa</small>
                                                     </div>
+                                                </div>
 
-                                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                                                        <div class="form-group">
-                                                            <label>Giới hạn số lượng đề tài mỗi giảng viên</label>
-                                                            <input type="number" name="" id="" min="1" max="8"
-                                                                class="form-control">
-                                                            <small class="text-muted">Số lượng đề tài tối đa mỗi giảng
-                                                                viên</small>
-                                                        </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Giới hạn số lượng đề tài mỗi giảng viên</label>
+                                                        <input type="number" name="" id="" min="1" max="8"
+                                                            class="form-control">
+                                                        <small class="text-muted">Số lượng đề tài tối đa mỗi giảng
+                                                            viên</small>
                                                     </div>
-
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="modal-footer">
@@ -347,7 +363,9 @@
 
     <script src="../../vendors/bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
 
+
     <script src="../../js/script.js"></script>
+
 </body>
 
 </html>
